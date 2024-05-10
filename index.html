@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sonu - developer porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(4, 49, 65);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 129, 155)
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 191, 62);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            background: rgb(1, 28, 28);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 120px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            background-color: ;
+            width: 34px;
+            font-size: 2.5rem;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(0, 166, 166);
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+
+        }
+
+        .leftsection .buttons {
+            padding: 23px;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: aqua;
+        }
+
+        .text-gray {
+            color: grey
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h3 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 80px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .img-top {
+            width: 30px;
+            top: -35px;
+            position: relative;
+            left: 10px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: rgb(1, 25, 40);
+            height: 223px;
+            margin: 10px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+            margin: 10px;
+        }
+
+        .footer li {
+            list-style: none;
+            margin: 10px;
+
+        }
+
+        footer .botton-bar {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgb(166, 96, 10);
+            justify-content: space-evenly;
+        }
+
+        .footer h3 {
+            margin: 10px;
+        }
+
+        .fa-twitter {
+            font-size: 20px;
+            color: rgb(7, 97, 161);
+        }
+
+        .fa-facebook {
+            font-size: 20px;
+            color: rgb(0, 115, 168);
+        }
+
+        .fa-instagram {
+            font-size: 20px;
+            color: rgba(129, 0, 220, 0.86);
+        }
+
+        .fa-linkedin {
+            font-size: 20px;
+            color: rgb(4, 113, 208);
+        }
+
+        .fa-youtube {
+            font-size: 20px;
+            color: red;
+        }
+
+        a:hover {
+            color: orange;
+
+        }
+
+        .social-icons i:hover {
+            color: orange;
+        }
+
+        .bottom-bar p {
+            color: orange;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">SONU'S PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li> <a href="/">Services</a></li>
+                    <li> <a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi my Name is <span class="purple">Sonu</span>
+                <div>And i am passionate</div>
+                <div>Web developer</div>
+                <span id="element"></span>
+                <div class="buttons"></div>
+                <button class="btn">Download Resume</button>
+                <button class="btn">visit Github</button>
+
+            </div>
+            <div class="rightsection">
+                <img src="logo.png" width="80%" margin="50px 0">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">i have done so far </span>
+            <h3>Work Experience</h3>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="html.png.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omins ullan enim facilis possimus accusamus.
+                        Dolor mollitia odia quos facilis incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="js.png.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2012-2014)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omins ullan enim facilis possimus accusamus.
+                        Dolor mollitia odia quos facilis incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="stack.png" alt="">
+                    <div class="vertical-title">
+                        full stak Developer (2014-2016)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omins ullan enim facilis possimus accusamus.
+                        Dolor mollitia odia quos facilis incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="python.png.png" alt="">
+                    <div class="vertical-title">
+                        PYTHON Developer (2016-2017)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omins ullan enim facilis possimus accusamus.
+                        Dolor mollitia odia quos facilis incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="web.png" alt="">
+                    <div class="vertical-title">
+                        WEB Developer (2017-2019)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omins ullan enim facilis possimus accusamus.
+                        Dolor mollitia odia quos facilis incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="app.png" alt="">
+                    <div class="vertical-title">
+                        Aandrid Developer (2019-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde omins ullan enim facilis possimus accusamus.
+                        Dolor mollitia odia quos facilis incidunt?
+                    </div>
+
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Contact Us</h3>
+
+                <p>Email: sonukumar9303343@gmail.com</p>
+
+                <p>phone: 7479449597</p>
+
+                <p>Address: siwan(bihar)</p>
+            </div>
+            <div class="footer-second">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">projecrs</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Follow us</h3>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></i>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </div>
+        </div>
+        <div class="botton-bar">
+            <p>&copy; 2024 your company . all reserved</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'web Designer', 'Aandrid Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
